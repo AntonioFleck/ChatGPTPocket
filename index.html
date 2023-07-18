@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskGPT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <img src="imgs/Logo-CHATGPT.png" alt="Logo-CHATGPT" id="headerLogo">
+        <h1 id="headerTitle">ChatGPT Pocket</h1>
+        <button id="clearBtn" class="btn">Clear Chat</button>
+        <button id="configBtn" class="btn">⚙️</button>
+    </div>
+    <div id="main">
+        <div id="chatContent">
+            <div id="chat">
+                
+            </div>
+            <div class="messageContainer GPTMessage" id="loadingMessage"><img alt="profilePic" class="profilePic" src="imgs/chatgpt.png"><p class="message">Generating...</p></div>
+        </div>
+        <div id="prompt">
+            <textarea id="askInput" placeholder="Ask something..."></textarea></div>
+        </div>
+    </div>
+    <div id="config">
+       <p class="configText">Welcome to the Pocket GPT Chat Extension for Google Chrome. This extension provides an easy way to connect to OpenAI's GPT-3 API and create a pocket version of the GPT Chatbot. To get started, please refer to the documentation page, which explains how to generate a new API key for OpenAI. You can find the documentation here:</p>
+        <a href="google.com" class="configText" target="_blank">https://docs.openai.com/</a>
+        <p class="configText">Once you have generated your API key, you can then set up the Pocket GPT Chat Extension in your browser. This will allow you to access the GPT-3 API and create your own pocket version of the GPT Chatbot. We hope you enjoy using the Pocket GPT Chat Extension for Google Chrome. If you have any questions or feedback, please don't hesitate to contact us.</p>
+        <form>
+            <label for="OPENAI_API_KEY">OPENAI API KEY</label>
+            <input type="text" name="OPENAI_API_KEY" id="OPENAI_API_KEY" placeholder="Insert your API Key here...">
+            <button id="saveKey">Save</button>
+        </form>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
